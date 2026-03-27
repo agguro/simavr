@@ -4,7 +4,7 @@ simavr - A Lean and Mean Atmel AVR Simulator
 _simavr_ is a high-performance AVR simulator for Linux or any platform using avr-gcc.
  It is designed to be small, compact, and hackable, allowing for rapid prototyping and firmware validation.
 
-The original repository is from /buserror.
+The original repository is from buserror/simavr.
 
 **Note:** This version of _simavr_ has been modernized to use the **Meson** build system and includes custom auditing tools for peripheral exploration.
 
