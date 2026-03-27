@@ -1,7 +1,10 @@
 simavr - A Lean and Mean Atmel AVR Simulator
 =============================================
 
-_simavr_ is a high-performance AVR simulator for Linux, or any platform using avr-gcc. It is designed to be small, compact, and hackable, allowing for rapid prototyping and firmware validation.
+_simavr_ is a high-performance AVR simulator for Linux or any platform using avr-gcc.
+ It is designed to be small, compact, and hackable, allowing for rapid prototyping and firmware validation.
+
+The original repository is from /buserror.
 
 **Note:** This version of _simavr_ has been modernized to use the **Meson** build system and includes custom auditing tools for peripheral exploration.
 
@@ -33,7 +36,7 @@ Validate the core library and tools:
 
 Internal Hardware Auditing (avr-probe)
 ----------------------------------------
-We have included a specialized tool, avr-probe, to explore the internal "hooks" of any simulated MCU. Use this to find available IRQs, Timers, and Ports before writing your bridge code.
+I have included a specialized tool, avr-probe, to explore the internal "hooks" of any simulated MCU. Use this to find available IRQs, Timers, and Ports before writing your bridge code.
 
     # List all supported cores
     ./builddir/avr-probe --list
@@ -65,6 +68,3 @@ Contributing
 ------------
 Patches and new core definitions are always welcome! Please submit your changes via Github pull requests.
 
-Examples
---------
-Check the examples/ directory for real-life firmware demonstrations, including LCD board emulations and OpenGL rendering of simulated displays.
