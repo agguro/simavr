@@ -1,24 +1,14 @@
-obj-*
-*.axf
-*.hex
-*.s
-simavr/simavr
-simavr/run_avr
-simavr/run_avr.exe
-*.a
-.tags*
-._*
-*.vcd
-TAGS
-callgrind.out.*
-*~
+# Meson & Ninja build artifacts
+builddir/
+subprojects/simavr/builddir/
+
+# Compiled Binaries (just in case they aren't in builddir)
+avr-probe
+
+# Temporary files
 *.o
-*.elf
-*.objdump
-perf.data
-.DS_Store
-.make.options*
-.vscode/*
-.bash_history
-compile_commands.json
-.cache
+*.a
+*.so
+*.txt
+!README.md
+!tools/*.c
